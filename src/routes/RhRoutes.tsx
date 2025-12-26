@@ -8,9 +8,11 @@ import { Reports } from '../pages/Reports';
 import { Profile } from '../pages/Profile';
 import { Permission } from '../pages/Permission';
 import { DaysOff } from '../pages/DaysOff';
+import { Shift } from '../pages/Shift';
 const RhRoutes = () => (
   <>
    <Route path="/manager-dashboard" element={<Dashboard />} />
+   <Route path="/shift" element={<Shift />} />
    <Route path="/attendance" element={<Attendance />} />
    <Route path="/leaves" element={<Leaves />} />
    <Route path="/employees" element={<Employees />} />

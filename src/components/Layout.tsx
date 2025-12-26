@@ -12,7 +12,9 @@ import {
   X,
   Building2,
   ChevronDown,
-  CalendarX
+  CalendarX,
+  Clock,
+
 } from 'lucide-react';
 
 type UserRole = 'admin' | 'rh' | 'manager' | 'employee';
@@ -27,6 +29,7 @@ interface NavItem {
 // 🔹 Définition des menus selon rôle
 const navItems: NavItem[] = [
   { icon: LayoutDashboard, label: 'Tableau de bord', path: 'manager-dashboard', roles: ['admin', 'rh', 'manager',] },
+  { icon: Clock, label: 'Heures de travail', path: 'shift', roles: ['admin', 'rh'] },
   { icon: LayoutDashboard, label: 'Tableau de bord', path: 'employee-dashboard', roles: ['employee',] },
   { icon: Users, label: 'Personnel', path: 'employees', roles: ['admin', 'rh'] },
   { icon: CalendarX, label: 'Days off', path: 'days_off', roles: ['admin', 'rh', 'manager', ] },
